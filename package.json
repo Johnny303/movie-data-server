@@ -1,16 +1,19 @@
 {
+  "name": "movie-data-server-javascript-floauswien",
   "type": "module",
-  "name": "movie-data-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "No starter code is provided. Start from scratch!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node script.js"
+    "devStart": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
