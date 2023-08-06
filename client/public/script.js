@@ -3,6 +3,7 @@ const movieListElement = document.getElementById("movieList")
 const modalElement = document.getElementById("modal")
 const modalHeadElement = document.getElementById("modalHead")
 const closeElement = document.getElementById("close")
+const url = "http://127.0.0.1:3000/api/movies/"
 
 async function fetchMovieList (url) {
     const response = await fetch(url)
@@ -15,7 +16,6 @@ async function fetchMovieList (url) {
 fetchMovieList("http://127.0.0.1:3000/api/movies/all")
 
 movieListElement.addEventListener("click", (event) => {
-    let url = "http://127.0.0.1:3000/api/movies/"
     let movie = event.target.innerText
     modalHeadElement.innerHTML = ""
     modalElement.style.display = "block"
