@@ -28,6 +28,12 @@ movieListElement.addEventListener("click", (event) => {
         modalHeadElement.insertAdjacentHTML("beforeend", `<h3>Year: ${data.year}</h3>`)
         modalHeadElement.insertAdjacentHTML("beforeend", `<h3>Genres:</h3>`)
         data.genres.forEach(genre => modalHeadElement.insertAdjacentHTML("beforeend", `<p>${genre}</p>`))
+        modalHeadElement.insertAdjacentHTML("beforeend", `<h3>Actors:</h3>`)
+        data.actors.forEach(actor => modalHeadElement.insertAdjacentHTML("beforeend", `<p>${actor}</p>`))
+        modalHeadElement.insertAdjacentHTML("beforeend", `<h3>Directors:</h3>`)
+        data.directors.forEach(director => modalHeadElement.insertAdjacentHTML("beforeend", `<p>${director}</p>`))
+        modalHeadElement.insertAdjacentHTML("beforeend", `<h3>Writers:</h3>`)
+        data.writers.forEach(writer => modalHeadElement.insertAdjacentHTML("beforeend", `<p>${writer}</p>`))
         
     }
 
